@@ -1,21 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-</head>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/lightbox.css" >
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Cullen's Interactive Photo Gallery</title>
+    </head>
 
 <body>
+    <header>
+      <h1> Photos From My Adventures </h1>
+      <input type="text" id="searchInput" placeholder="Search">
+    </header>
+
 <main class="wrapper">
 
-<input type="text" class="search">
+    <div class="photo-wrapper">
+      <a class="image-link" href="photos/01.jpg" data-lightbox="img-link" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+          <img class="image-thumbnail" src="photos/thumbnails/01.jpg" alt="image of a meadow with hay bales" />
+      </a>
+    </div>
 
-<div>
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/02.jpg" data-lightbox="img-link" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+          <img class="image-thumbnail" src="photos/thumbnails/02.jpg" alt="image of a lake and mountains" />
+      </a>
+   </div>
 
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/03.jpg" data-lightbox="img-link" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+          <img class="image-thumbnail" src="photos/thumbnails/03.jpg" alt="image of a canyon with trees" />
+      </a>
+   </div>
 
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/04.jpg" data-lightbox="img-link" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+          <img class="image-thumbnail" src="photos/thumbnails/04.jpg" alt="image of an iceberg" />
+      </a>
+   </div>
 
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/05.jpg" data-lightbox="img-link" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+          <img class="image-thumbnail" src="photos/thumbnails/05.jpg" alt="image of a desert with rocky cliffs" />
+      </a>
+   </div>
 
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/06.jpg" data-lightbox="img-link" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
+          <img class="image-thumbnail" src="photos/thumbnails/06.jpg" alt="image of trees changing colors" />
+      </a>
+   </div>
 
-</div>
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/07.jpg" data-lightbox="img-link" data-title="I drove past this plantation yesterday, everything is so green!">
+          <img class="image-thumbnail" src="photos/thumbnails/07.jpg" alt="image of rice plantation" />
+      </a>
+   </div>
+
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/08.jpg" data-lightbox="img-link" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+          <img class="image-thumbnail" src="photos/thumbnails/08.jpg" alt="image of sandy dunes" />
+      </a>
+   </div>
+
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/09.jpg" data-lightbox="img-link" data-title="We enjoyed a quiet stroll down this countryside lane.">
+          <img class="image-thumbnail" src="photos/thumbnails/09.jpg" alt="image of a narrow country road" />
+      </a>
+   </div>
+
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/10.jpg" data-lightbox="img-link" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
+          <img class="image-thumbnail" src="photos/thumbnails/10.jpg" alt="image of a sunset over the ocean" />
+      </a>
+   </div>
+
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/11.jpg" data-lightbox="img-link" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+          <img class="image-thumbnail" src="photos/thumbnails/11.jpg" alt="image of a view from inside a cave" />
+      </a>
+   </div>
+
+   <div class="photo-wrapper">
+      <a class="image-link" href="photos/12.jpg" data-lightbox="img-link" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+          <img class="image-thumbnail" src="photos/thumbnails/12.jpg" alt="image of mountains" />
+      </a>
+   </div>
 
 </main>
+  <script src="js/scripts.js"></script>
+  <script>
+    lightbox.option({
+      alwaysShowNavOnTouchDevices: true
+    })
+  </script>
+  <script src="js/jQueryAndLightbox.min.js"></script>
 </body>
 </html>
