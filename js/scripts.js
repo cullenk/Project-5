@@ -14,7 +14,7 @@ function filterImages() {
   let imageResult = document.querySelectorAll(".photo-wrapper"); // creates new variable called "imageResult" that stores all of the photo-wrapper classes (which contain the images in <a> tags)
 
   for (let i = 0; i < imageResult.length; i++) {
-    let a = document.getElementsByTagName('a'); // cycles through all of the elements with a class of photo-wrapper and targets the <a> tags, stores that value in "a"
+    let a = document.querySelectorAll(".image-link"); // cycles through all of the elements with a class of photo-wrapper and targets the image-link class, stores that value in "a"
     for (let i = 0; i < a.length; i++) {
         let imageCaption = a[i].getAttribute("data-title"); // for each <a> tag it comes across (and it's index number, i) it finds the data-title (caption) of the image and stores it in the value "imageCaption"
           if (imageCaption.toLowerCase().indexOf(searchResult) > -1) { // checks to see if the data from the caption matches the search (which would return an index value > -1 because at least one of the images with an index value of 0 or higher contain the text)
