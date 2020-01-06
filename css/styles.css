@@ -1,19 +1,32 @@
 
 /* Main Styles */
 
-body {
-  background-color: #ADD8E6;
-  font-family: "Indie Flower", sans-serif;
-  font-size: 20px;
-}
-
 header {
   text-align: center;
-  margin: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  animation: headerIn;
+  animation-duration: 2s;
+  background: url('../images/wood.jpg');
+  border: 3px solid black;
+}
+
+@keyframes headerIn {
+  0% {top: -300px}
+  100% {top: 0}
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
 h1 {
+  padding: 10px;
+  color: white;
+  background-color: #ffb366;
   margin-bottom: 60px;
+  letter-spacing: 5px;
+  font-size: 2em;
+  border: 1px solid black;
 }
 
 input {
@@ -28,6 +41,12 @@ input:focus {
     border: 2px solid violet;
 }
 
+body {
+  background-color: #ADD8E6;
+  font-family: "Indie Flower", sans-serif;
+  font-size: 20px;
+}
+
 main {
   margin: auto;
   margin-top: 70px;
@@ -40,11 +59,31 @@ main {
   max-width: 900px;
 }
 
+.camera:hover {
+  transform: scale(1.2) rotate(360deg);
+  transition: .5s;
+}
+
 .image-thumbnail {
   margin-top: 15px;
   border-radius: 5px;
   border: 1px solid navy;
   box-shadow: 0 0 5px -2px black;
+  position: relative;
+  animation: picturesIn;
+  animation-duration: 2s;
+}
+
+@keyframes picturesIn {
+  0% {bottom: -300px}
+  100% {bottom: 0}
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.image-thumbnail:hover {
+  border: 1px solid violet;
+  transform: scale(1.1);
 }
 
 /* Lightbox Adjusted Styles */
