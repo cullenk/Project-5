@@ -1,10 +1,9 @@
-
 // Obtain the value from the search input and have it perform an action upon keyup
 
 let searchInput = document.getElementById("searchInput");
 searchInput.addEventListener("keyup", filterImages);
 
-// Call the filterImages function to atually make it run.
+// Create the filterImages function that's called above.
 
 function filterImages() {
   let searchResult = document.getElementById("searchInput").value.toLowerCase(); // Give the searchInput result a value of "searchResult" in all lowercase
