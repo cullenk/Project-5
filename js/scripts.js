@@ -1,3 +1,5 @@
+// jshint esversion: 8
+
 // Obtain the value from the search input and have it perform an action upon keyup
 
 let searchInput = document.getElementById("searchInput");
